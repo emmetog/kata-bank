@@ -3,11 +3,11 @@ kata-bank
 
 A coding kata exercise.
 
-The situation is this: you are hired at a small bank which is trying to modernise their
-loan application processing system.  They want you to help them create a system which
+The situation is this: you are hired at a large well-known bank which is trying to modernise
+their loan application processing system.  They want you to help them create a system which
 can calculate the details of the loan repayments that a customer will have to pay.  Any
-mistake in the algorithm could mean that the bank looses a lot of money or that the
-customer gets very angry, so be careful!
+mistake in the algorithm could mean that the bank looses a lot of money or make the customer
+get very angry, so be careful!
 
 The Criteria
 ------------
