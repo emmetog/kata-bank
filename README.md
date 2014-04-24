@@ -16,8 +16,8 @@ The loan repayment calculator must take into account the following information w
 calculating the loan repayments:
 * The full principal (amount of loan)
 * The yearly interest rate
-* The term of the loan in days
-* The frequency of repayments in days
+* The term of the loan in years
+* The amount of repayments per year
 * The date when the loan starts
 
 The calculator should return the following information for each repayment:
@@ -29,9 +29,13 @@ The calculator should return the following information for each repayment:
 Interest
 --------
 
-The interest is calculated using Simple Interest for now (but this could change in the future).  Simple Interest
-is calculated by the following formula:
+The interest is calculated using Simple Interest for now (but this could change in the future).
+Simple Interest is calculated by the following formula:
 
-Interest = Monthly interest rate * Outstanding principal
+Interest = Yearly interest rate * Outstanding principal * Duration in years
 
-The monthly interest rate can be calculated as the yearly interest rate divided by 12.
+However, later on the bank asks you to implement a more sophisticated interest algorithm
+(implement the simple interest algorithm first, then try to add this new algorithm).  They want
+to use the following formula to calculate the interest:
+
+Interest = Outstanding principal * ( ( 1 + interest rate ) ^( 1 / # of yearly payments ) ) - 1
